@@ -1,0 +1,9 @@
+{
+    "extends": "@robot-inventor/tsconfig-base/tsc.json",
+    "compilerOptions": {
+        "noEmit": true,
+        "rootDir": "../",
+        "types": ["@cloudflare/workers-types"]
+    },
+    "include": ["./**/*.ts"]
+}

@@ -1,0 +1,10 @@
+{
+    "extends": "@robot-inventor/tsconfig-base/bundler.json",
+    "compilerOptions": {
+        "plugins": [
+            {
+                "transform": "typia/lib/transform"
+            }
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "interview-proofreader",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write src/ functions/",
+    "format:check": "prettier --check src/ functions/",
+    "build": "cross-env NODE_OPTIONS=--experimental-transform-types NODE_ENV=production rspack build",
+    "dev": "cross-env NODE_OPTIONS=--experimental-transform-types NODE_ENV=development rspack serve",
+    "prepare": "ts-patch install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Larva06/interview-proofreader.git"
+  },
+  "author": "Larva06",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Larva06/interview-proofreader/issues"
+  },
+  "homepage": "https://github.com/Larva06/interview-proofreader#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250303.0",
+    "@google/generative-ai": "^0.23.0",
+    "@robot-inventor/tsconfig-base": "^6.0.0",
+    "@rspack/cli": "^1.2.7",
+    "@rspack/core": "^1.2.7",
+    "@ryoppippi/unplugin-typia": "^1.2.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "prettier": "^3.5.3",
+    "the-new-css-reset": "^1.11.3",
+    "ts-patch": "^3.3.0",
+    "typescript": "~5.8.2",
+    "typia": "^8.0.0"
+  }
+}
