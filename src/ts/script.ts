@@ -259,7 +259,9 @@ const main = async () => {
         });
 
         for await (const item of stream.stream) {
-            refinedTextElement.value += item.text;
+            const { candidates } = item;
+            if (!candidates || candidates.length === 0) continue;
+            refinedTextElement.value += candidates[0]?.content.parts[0]?.text || "";
         }
 
         alert("校正が完了しました。");
