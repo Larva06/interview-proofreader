@@ -245,6 +245,8 @@ const main = async () => {
             return;
         }
 
+        refinedTextElement.value = "";
+
         const stream = await model.generateContentStream({
             contents: [
                 {
