@@ -248,6 +248,8 @@ const init = async () => {
             return;
         }
 
+        submitButtonElement.disabled = true;
+        submitButtonElement.textContent = "校正中...";
         refinedTextElement.value = "";
 
         const stream = await model.generateContentStream({
@@ -269,6 +271,8 @@ const init = async () => {
             refinedTextElement.value += candidates[0]?.content.parts[0]?.text || "";
         }
 
+        submitButtonElement.disabled = false;
+        submitButtonElement.textContent = "校正する";
         alert("校正が完了しました。");
     });
 };

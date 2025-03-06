@@ -50,4 +50,9 @@ textarea {
         outline: solid 0.2rem #3a9ad9;
         outline-offset: 0.2rem;
     }
+
+    &:disabled {
+        background: #aaa;
+        cursor: default;
+    }
 }
