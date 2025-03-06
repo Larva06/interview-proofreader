@@ -226,7 +226,7 @@ Follow these instructions and guidelines precisely to produce a final polished d
     return model;
 };
 
-const main = async () => {
+const init = async () => {
     const rawTextElement = document.querySelector<HTMLTextAreaElement>("#raw-text");
     if (!rawTextElement) throw new Error("#raw-text element not found");
 
@@ -237,6 +237,9 @@ const main = async () => {
     if (!refinedTextElement) throw new Error("#refined-text element not found");
 
     const model = await initializeGemini();
+
+    rawTextElement.value = "";
+    refinedTextElement.value = "校正後のテキストがここに表示されます。";
 
     submitButtonElement.addEventListener("click", async () => {
         const rawText = rawTextElement.value;
@@ -270,4 +273,4 @@ const main = async () => {
     });
 };
 
-void main();
+void init();
