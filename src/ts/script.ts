@@ -1,21 +1,19 @@
 import "the-new-css-reset/css/reset.css";
 import "../css/style.css";
 import { type GenerativeModel, GoogleGenerativeAI } from "@google/generative-ai";
-// import type { Token } from "../types/api";
-// import { is } from "typia";
+import type { Token } from "../types/api";
+import { is } from "typia";
 
 const getAPIKey = async (): Promise<string> => {
-    // const response = await fetch("/api/auth/token");
-    // if (!response.ok) {
-    //     throw new Error("Failed to fetch API key");
-    // }
+    const response = await fetch("/api/auth/token");
+    if (!response.ok) {
+        throw new Error("Failed to fetch API key");
+    }
 
-    // const data = await response.json();
-    // if (!is<Token>(data)) throw new Error("Invalid token format");
+    const data = await response.json();
+    if (!is<Token>(data)) throw new Error("Invalid token format");
 
-    // return data.token;
-
-    return "";
+    return data.token;
 };
 
 const initializeGemini = async (): Promise<GenerativeModel> => {
