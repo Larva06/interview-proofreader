@@ -25,7 +25,7 @@
     "@cloudflare/workers-types": "^4.20250303.0",
     "@google/generative-ai": "^0.23.0",
     "@robot-inventor/tsconfig-base": "^6.0.0",
-    "@rspack/cli": "^1.2.7",
+    "@rspack/cli": "^1.4.8",
     "@rspack/core": "^1.2.7",
     "@ryoppippi/unplugin-typia": "^1.2.0",
     "cross-env": "^7.0.3",
