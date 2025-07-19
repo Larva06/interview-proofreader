@@ -27,7 +27,7 @@
     "@robot-inventor/tsconfig-base": "^6.0.0",
     "@rspack/cli": "^1.4.8",
     "@rspack/core": "^1.2.7",
-    "@ryoppippi/unplugin-typia": "^1.2.0",
+    "@ryoppippi/unplugin-typia": "^2.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
     "fork-ts-checker-webpack-plugin": "^9.0.2",
