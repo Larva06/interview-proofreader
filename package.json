@@ -35,6 +35,6 @@
     "the-new-css-reset": "^1.11.3",
     "ts-patch": "^3.3.0",
     "typescript": "~5.8.2",
-    "typia": "^8.0.0"
+    "typia": "^9.0.0"
   }
 }
