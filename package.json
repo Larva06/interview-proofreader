@@ -34,7 +34,12 @@
     "prettier": "^3.5.3",
     "the-new-css-reset": "^1.11.3",
     "ts-patch": "^3.3.0",
-    "typescript": "~5.8.2",
+    "typescript": "^5.9.2",
     "typia": "^11.0.0"
+  },
+  "overrides": {
+    "@ryoppippi/unplugin-typia": {
+      "typescript": "^5.9.2"
+    }
   }
 }
