@@ -1,7 +1,7 @@
 import { CssExtractRspackPlugin, HtmlRspackPlugin } from "@rspack/core";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import { defineConfig } from "@rspack/cli";
-import unpluginTypia from "@ryoppippi/unplugin-typia/rspack";
+import unpluginTypia from "@typia/unplugin/rspack";
 
 const isProduction = process.env["NODE_ENV"] === "production";
 
