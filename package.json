@@ -34,7 +34,7 @@
     "fork-ts-checker-webpack-plugin": "^9.0.2",
     "prettier": "^3.5.3",
     "the-new-css-reset": "^1.11.3",
-    "ts-patch": "^3.3.0",
+    "ts-patch": "^4.0.0",
     "typescript": "^6.0.0",
     "typia": "^12.0.1"
   }
